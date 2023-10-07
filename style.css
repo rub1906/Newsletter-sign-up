@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+  --Paragraph-Font-Size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--Dark-Slate-Grey);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: var(--Dark-Slate-Grey);
+}
+
+#signupForm {
+  background-color: white;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  flex-direction: column;
+}
+
+#subscribeForm {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 23rem;
+}
+
+#title {
+  font-size: 2.6rem;
+}
+
+#benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: start;
+}
+
+.imgList {
+  margin-right: 1rem;
+  width: 1.3rem;
+}
+
+label {
+  font-weight: 700;
+  font-size: 0.75rem;
+  margin-right: auto;
+}
+
+#emailInput {
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 10px;
+  border: solid hsla(0, 0%, 20%, 0.295) 1px;
+}
+
+#emailInput:focus {
+  outline: solid #333 1px;
+}
+
+#emailInput::placeholder {
+  font-size: 1rem;
+}
+
+#subscribeButton {
+  padding: 1rem;
+  background: var(--Dark-Slate-Grey);
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#subscribeButton:hover {
+  background: linear-gradient(to right, #ff5478, #ff673e);
+  box-shadow: 3px 10px 30px#ff673e;
+}
+
+#bgDesktop {
+  display: none;
+}
+
+.labels {
+  display: flex;
+  width: 100%;
+}
+
+#error {
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: var(--Tomato);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--Tomato);
+}
+
+@media screen and (min-width: 956px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    background-color: var(--Dark-Slate-Grey);
+    position: relative;
+  }
+
+  #bgDesktop {
+    display: block;
+  }
+
+  #bgMobile {
+    display: none;
+  }
+
+  #signupForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+    padding: 1.5rem;
+    border-radius: 2rem;
+  }
+
+  #subscribeForm {
+    max-width: 27rem;
+  }
+
+  #title {
+    font-size: 3.5rem;
+  }
+
+  #successForm {
+    max-width: 30rem;
+    max-height: 30rem;
+    border-radius: 2rem;
+    display: none;
+  }
+}
+
+.errorState {
+  color: var(--Tomato);
+  background-color: hsla(4, 100%, 67%, 0.212);
+  outline: solid var(--Tomato) 2px;
+}
+
+#successForm {
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  height: 97svh;
+  gap: 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+#successForm img {
+  width: 3.5rem;
+  margin-top: auto;
+}
+
+#successForm h1 {
+  font-size: 3rem;
+}
+
+#successForm p {
+  margin-bottom: auto;
+}
+
+#dismissButton {
+  padding: 1rem;
+  background: var(--Dark-Slate-Grey);
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#dismissButton:hover {
+  background: linear-gradient(to right, #ff5478, #ff673e);
+  box-shadow: 3px 10px 30px#ff673e;
+}
+
+#emailText {
+  font-weight: 700;
+}
