@@ -126,50 +126,6 @@ label {
   color: var(--Tomato);
 }
 
-@media screen and (min-width: 956px) {
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100svh;
-    background-color: var(--Dark-Slate-Grey);
-    position: relative;
-  }
-
-  #bgDesktop {
-    display: block;
-  }
-
-  #bgMobile {
-    display: none;
-  }
-
-  #signupForm {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--White);
-    padding: 1.5rem;
-    border-radius: 2rem;
-  }
-
-  #subscribeForm {
-    max-width: 27rem;
-  }
-
-  #title {
-    font-size: 3.5rem;
-  }
-
-  #successForm {
-    max-width: 30rem;
-    max-height: 30rem;
-    border-radius: 2rem;
-    display: none;
-  }
-}
-
 .errorState {
   color: var(--Tomato);
   background-color: hsla(4, 100%, 67%, 0.212);
@@ -219,4 +175,48 @@ label {
 
 #emailText {
   font-weight: 700;
+}
+
+@media screen and (min-width: 956px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    background-color: var(--Dark-Slate-Grey);
+    position: relative;
+  }
+
+  #bgDesktop {
+    display: block;
+  }
+
+  #bgMobile {
+    display: none;
+  }
+
+  #signupForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+    padding: 1.5rem;
+    border-radius: 2rem;
+  }
+
+  #subscribeForm {
+    max-width: 27rem;
+  }
+
+  #title {
+    font-size: 3.5rem;
+  }
+
+  #successForm {
+    max-width: 30rem;
+    max-height: 30rem;
+    border-radius: 2rem;
+    display: none;
+  }
 }
